@@ -25,5 +25,4 @@ print(favorite_language)
 
 # Remove prefix
 url = 'https://nostarch.com'
-
 print(url.removeprefix('https://'))
