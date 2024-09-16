@@ -22,3 +22,8 @@ print(favorite_language.rstrip().lstrip())
 
 favorite_language = favorite_language.rstrip().lstrip()
 print(favorite_language)
+
+# Remove prefix
+url = 'https://nostarch.com'
+
+print(url.removeprefix('https://'))
