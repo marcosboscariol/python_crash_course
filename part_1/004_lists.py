@@ -61,3 +61,28 @@ motorcycles = ['honda', 'yamaha', 'suzuki', 'ducati']
 print(motorcycles)
 motorcycles.remove('ducati')
 print(motorcycles)
+
+# Organizing a List
+
+# Sorting a List Permanently with the sort() Method
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+cars.sort()
+print(cars)
+cars.sort(reverse=True)
+print(cars)
+
+# Sorting a List Temporarily with the sorted() Function
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+print(cars)
+print(sorted(cars))
+print(cars)
+
+# Printing a List in Reverse Order
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+print(cars)
+cars.reverse()
+print(cars)
+
+# Finding the Length of a List
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+print(len(cars))
