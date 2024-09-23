@@ -62,3 +62,25 @@ print("My favorite foods are: ")
 print(my_foods)
 print("\nMy friend's favorite foods are: ")
 print(friends_food)
+
+# Tuples
+
+# Defining a Tuple
+dimensions = (200, 50)
+print(dimensions[0])
+print(dimensions[1])
+
+# Looping through all values in a Tuple
+for dimension in dimensions:
+    print(dimension)
+
+# Writing over a Tuple
+dimensions = (200, 50)
+print("\nOriginal dimensions: ")
+for dimension in dimensions:
+    print(dimension)
+
+dimensions = (400, 100)
+print('\nNew dimensions: ')
+for dimension in dimensions:
+    print(dimension)
