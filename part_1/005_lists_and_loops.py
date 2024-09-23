@@ -36,3 +36,29 @@ print(sum(digits))
 # List comprehensions
 squares = [value ** 2 for value in range(1, 11)]
 print(squares)
+
+# Working with Part of a List
+
+# Slicing a list
+players = ['charles', 'martina', 'michael', 'florence', 'eli']
+print(players[0:3])
+print(players[1:4])
+print(players[:4])
+print(players[2:])
+print(players[-3:])
+
+# Looping through a Slice
+for player in players[:3]:
+    print(player.title())
+
+# Coppyinh a List
+my_foods = ['pizza', 'falafel', 'carrot cake']
+friends_food = my_foods[:]
+
+my_foods.append("cannoli")
+friends_food.append("icecream")
+
+print("My favorite foods are: ")
+print(my_foods)
+print("\nMy friend's favorite foods are: ")
+print(friends_food)
