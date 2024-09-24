@@ -8,6 +8,7 @@ for car in cars:
     else:
         print(car.title())
 
+
 # Conditional Tests
 
 # Checking for Equality
@@ -17,11 +18,13 @@ print(car == 'bmw')
 car = 'audi'
 print(car == 'bmw')
 
+
 # Checking for Inequality
 requested_topping = 'mushrooms'
 
 if requested_topping != 'anchovies':
     print("Hold the anchovies!")
+
 
 # Numerical Comparison
 age = 18
@@ -29,6 +32,7 @@ age = 18
 print(age == 18)
 print(age < 18)
 print(age > 18)
+
 
 # Checking Multiple Conditions
 
@@ -38,11 +42,13 @@ age_1 = 18
 
 print(age_0 >= 21 and age_1 >= 21)
 
+
 # Using or to Check Multipla Conditions
 age_0 = 22
 age_1 = 18
 
 print(age_0 >= 21 or age_1 >= 21)
+
 
 # Checking Whether a Value us Not in a List
 banned_users = ['andrew', 'carolina', 'david']
@@ -51,8 +57,19 @@ user = 'marie'
 if user not in banned_users:
     print(f'{user.title()}, you can post.')
 
+
 # Simple if Statement
 age = 19
 
 if age >= 18:
     print('You are old enough to vote.')
+
+
+# if-else Statements
+age = 17
+if age >= 18:
+    print("You are old enough to vote!")
+    print("Have you registered to vote yet?")
+else:
+    print("Sorry, you are too young to vote.")
+    print("Please register to vote as soon as you turn 18!")
