@@ -84,5 +84,76 @@ elif age < 18:
 else:
     print("Your admission cost is $40.")
 
+age = 12
 
-#
+if age < 4:
+    price = 0
+elif age < 18:
+    price = 25
+else:
+    price = 40
+
+print(f"Your admission cost is ${price}.")
+
+# Using Multiple elif Block
+age = 12
+
+if age < 4:
+    price = 0
+elif age < 18:
+    price = 25
+elif age < 65:
+    price = 40
+else:
+    price = 20
+
+print(f"Your admission cost is ${price}.")
+
+# Omitting the else Block
+age = 12
+
+if age < 4:
+    price = 0
+elif age < 18:
+    price = 25
+elif age < 65:
+    price = 40
+elif age >= 65:
+    price = 20
+
+print(f"Your admission cost is ${price}.")
+
+# Using id Statements with Lists
+
+# Checking for Special Items
+requested_toppings = ['mushrooms', 'green peppers', 'extra cheese']
+
+for requested_topping in requested_toppings:
+    if requested_topping == 'green peppers':
+        print("Sorry, we don't green peppers")
+    else:
+        print(f'Adding {requested_topping}.')
+
+print('\nOrder finished')
+
+
+# Checking that a list is not empty
+requested_toppings = []
+if requested_toppings:
+    for requested_topping in requested_toppings:
+        print(f"Adding {requested_topping}.")
+    print("\nFinished making your pizza!")
+else:
+    print("Are you sure you want a plain pizza?")
+
+# Using Multiple Lists
+available_toppings = ['mushrooms', 'olives',
+                      'green peppers', 'pepperoni', 'pineapple', 'extra cheese']
+requested_toppings = ['mushrooms', 'french fries', 'extra cheese']
+
+for requested_topping in requested_toppings:
+    if requested_topping in available_toppings:
+        print(f"Adding {requested_topping}.")
+    else:
+        print(f"Sorry, we don't have {requested_topping}.")
+print("\nFinished making your pizza!")
